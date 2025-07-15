@@ -1,0 +1,574 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('font/Tempting.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Great Vibes", cursive, serif;
+  background-color: #ffffff;
+  color: #7f0a0a;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.header-text,
+.file-text,
+.about-title,
+.contact-title {
+  font-family: "Great Vibes", cursive;
+}
+
+nav a {
+  margin-right: 16px;
+  font-family: 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  color: #7f0a0a;
+  padding-bottom: 0.3rem;
+  transition: border-color 0.25s ease;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:hover,
+nav a.active {
+  border-color: #7f0a0a;
+}
+
+.underline-nav {
+  border-bottom: 1px solid #7f0a0a;
+  padding-bottom: 0.15rem;
+  margin-bottom: 0.75rem;
+  color: #7f0a0a;
+}
+
+.home {
+  scroll-margin-top: 180px;
+}
+
+.button-text {
+  color: #fff;
+  background-color: #520403;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(82, 4, 3, 0.8);
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.button-text svg {
+  stroke: #fff;
+  stroke-width: 0.7;
+}
+
+main {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.welcome-text {
+  font-size: 200px;
+  font-weight: 200;
+  text-align: left;
+  font-family: 'Great Vibes', cursive;
+  padding-left: 24px;
+  padding-top: 0;
+  margin-top: -180px;
+  opacity: 0;
+  text-shadow: 2px 4px 6px rgba(127, 10, 10, 0.3);
+  transform: translateX(-100px);
+  animation: slideInLeft 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.welcome-container {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease-out;
+}
+
+.welcome-container.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.welcome-subtext {
+  font-family: 'Great Vibes', cursive;
+  text-align: left;
+  padding-left: 510px;
+  margin-top: -100px;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.typing-text {
+  display: inline-block;
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
+  white-space: nowrap;
+  border-right: 2px solid #7f0a0a;
+  overflow: hidden;
+}
+
+.about-me-container {
+  margin-top: 3rem;
+  padding: 0 0.7rem;
+  margin-left: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: #541111;
+  scroll-margin-top: 100px; /* 👈 ni akan bagi ruang waktu scroll */
+}
+
+.about-title {
+  font-size: 90px;
+  font-weight: 100;
+  font-family: 'Great Vibes', cursive;
+  color: #7f0a0a;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: -30px;
+  text-shadow: 2px 4px 6px rgba(127, 10, 10, 0.3);
+  animation: popUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.7)
+}
+
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* supaya gambar ke kiri */
+  padding-right: 10px;
+  margin: 0;
+}
+
+.about-image-container img {
+  width: 700px;
+  height: auto;
+  margin-right: auto;
+  margin-left: 0;
+  transform: translateX(20px) translateY(-40px);;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* bagi responsive */
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: justify;
+  flex: 1;
+  transform: translateX(-190px); /* 👈 tambah ni */
+  transition: transform 0.5s ease;
+}
+
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-image-container {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+.about-text-container {
+  flex: 1;
+  padding-left: 0;
+  transform: translateX(-20px);
+}
+
+.about-text-container p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #541111;
+}
+
+.footer {
+  background-color: #800000;
+  color: white;
+  padding: 1.5rem 2rem;
+  font-family: 'Times New Roman', serif;
+  padding-top: 2rem;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-icons a img {
+  width: auto;
+  height: 45px;
+  margin-right: 12px;
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+}
+
+.footer-icons a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-center-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  flex: 1;
+  transform: translateX(-50px); /* 👈 adjust ikut suka, -10px ke -30px pun okay */
+}
+
+.footer-email {
+  font-family: "Times New Roman", serif;
+  color: #fff;
+  text-decoration: none;
+   margin-top: 30px;
+}
+
+.footer-email:hover {
+  text-decoration: underline;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 1rem;
+  color: #f3f3f3;
+  transform: translateX(10px); 
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px; /* jarak antara ikon */
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+  padding-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 1px solid #7f0a0a;
+}
+
+header.scrolled {
+  background-color: #fff5f5;
+  box-shadow: 0 2px 10px rgba(127, 10, 10, 0.2);
+}
+
+.header-top {
+  margin-bottom: 0.1rem;
+}
+
+.logo-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  font-weight: 200;
+  user-select: none;
+  margin: 0 0 12px 0; /* ini yang akan turunkan dia */
+  padding: 0;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-bar a {
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.25s ease;
+}
+
+.nav-bar a:hover {
+  border-color: #7f0a0a;
+}
+
+.nav-bar a:hover,
+.nav-bar a.active {
+  border-color: #7f0a0a;
+}
+
+.logo-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  font-weight: 200;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.welcome-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.image-slider {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  border-radius: 12px;
+  background-color: #800000;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px;
+  transform: translateX(-80px); /* 👈 move kiri betul2 */
+}
+
+.slider-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: -40px; /* 👈 naik atas sikit */
+  left: -10px;
+  box-shadow: #520403;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.slider-img.active {
+  opacity: 1;
+}
+
+/* Social icons */
+.social-icons {
+  position: absolute;
+  right: -90px; /* closer to image */
+  bottom: 130px;  /* 👈 naik atas sikit */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 2;
+}
+
+
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: auto;
+  height: 50px;
+
+}
+
+/* Product HTML */
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+#skincare, #makeup {
+  scroll-margin-top: 120px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  padding: 0 3rem;
+  overflow: hidden;
+  margin-bottom: 4rem; /* ✅ adjust ni ikut suka */
+}
+
+.product-track {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.product-track::-webkit-scrollbar {
+  display: none;
+}
+
+
+.product-card {
+  flex: 0 0 auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(127, 10, 10, 0.08);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(127, 10, 10, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+  font-family: 'Playfair Display', serif;
+}
+
+/* ARROWS */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(127, 10, 10, 0.7);
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.scroll-btn.left {
+  left: 0.5rem;
+}
+
+.scroll-btn.right {
+  right: 0.5rem;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(127, 10, 10, 0.9);
+}
+
+.makeup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.makeup-section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #7f0a0a;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+#productModal {
+  font-family: 'Playfair Display', serif;
+}
+
+#productModal h2 {
+  font-family: "Great Vibes", cursive, serif;
+}
+
+/* in your CSS */
+::-webkit-scrollbar {
+  height: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e5a2a2;
+  border-radius: 10px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

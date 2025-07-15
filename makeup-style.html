@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makeup Style - Qurratu Ain</title>
+  <link rel="stylesheet" href="makeup-style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body class="bg-pink-50 text-[#541111] font-[Playfair]">
+
+    <!-- Header -->
+<header>
+  <div class="header-top">
+    <div class="logo-text">Qurratu Ain</div>
+  </div>
+  <nav class="nav-bar">
+    <a href="makeup.html#home">HOME</a>
+    <a href="makeup.html#about">ABOUT ME</a>
+    <a href="product.html">PRODUCT</a>
+    <a href="makeup-style.html">MAKEUP STYLE</a>
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">Explore My Makeup Style</h1>
+    <p class="hero-subtext">From soft glam to bold editorial looks</p>
+    <a href="#makeup-gallery" class="mt-20 bg-[#7f0a0a] text-white px-6 py-2 rounded-full hover:bg-[#a11414] transition">
+  See Styles Below
+</a>
+
+  </div>
+</section>
+  <!-- Makeup Gallery -->
+  <section id="makeup-gallery" class="py-16 px-6">
+  <h2 class="text-center text-4xl font-bold text-[#7f0a0a] mb-10">Makeup Lookbook</h2>
+
+  <!-- Mini Nav -->
+  <div class="mini-nav sub-nav flex justify-center gap-4 mb-8">
+    <a href="#" class="sub-link active" data-tab="natural">Natural</a>
+    <a href="#" class="sub-link" data-tab="glam">Glam</a>
+    <a href="#" class="sub-link" data-tab="pinky">Pinky</a>
+    <a href="#" class="sub-link" data-tab="clown">Clown</a>
+    <a href="#" class="sub-link" data-tab="red">Red</a>
+  </div>
+
+  <!-- Tab Content -->
+  <div id="tab-contents" class="space-y-16">
+
+   <!-- Natural Look -->
+   <div class="tab-content" id="natural">
+   <div class="flex flex-col md:flex-row items-start gap-6 bg-[#7f0a0a] p-6 rounded-xl text-white">
+    
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <div class="bg-white p-2 rounded-lg shadow-lg inline-block mt-10">
+        <img src="img/makeup-style/natural.jpg" alt="Natural Look" class="w-64 h-auto rounded-md">
+      </div>
+    </div>
+
+     <!-- Step-by-step text -->
+        <div class="w-full md:w-1/2 text-left ml-[-400px] mt-8 text-left text-step-section">
+          <h3 class="text-4xl font-bold mb-4 font-[Playfair] text-[#ffe6eb]">Step-by-Step:</h3>
+          <ol class="list-decimal list-inside space-y-3 text-lg leading-relaxed">
+           <li>Begin by thoroughly cleansing the face to ensure a clean and fresh canvas. Follow up with your regular skincare routine to prep and hydrate the skin.</li>
+           <li>Apply a lightweight cushion foundation for a natural, breathable finish that evens out the complexion without appearing heavy.</li>
+           <li>Use a soft nude-toned eyeshadow to enhance the eyes subtly while maintaining a clean and effortless look.</li>
+           <li>Apply a light orange blush to the cheeks for a healthy, radiant glow. <em>(Tip: A matte lipstick can be repurposed as a cream blush for a seamless blend.)</em></li>
+           <li>Curl the eyelashes and apply a single layer of mascara to subtly define and lift the lashes.</li>
+           <li>Lightly fill in the eyebrows to enhance their natural shape, creating a groomed yet soft appearance.</li>
+           <li>Apply eyeliner with a clean, minimal line—avoid extending it too far to preserve the natural aesthetic.</li>
+           <li>Set the makeup with a light dusting of loose powder to reduce shine and help the base last longer.</li>
+           <li>Complete the look by applying the same matte lipstick used for the blush onto the lips for a cohesive.</li>
+          </ol>
+        </div>
+      </div>
+
+  <!-- Product Carousel -->
+  <div class="mt-6 bg-[#ffe6eb] p-6 rounded-xl shadow-inner relative">
+
+    <h4 class="text-[#7f0a0a] font-bold mb-4 text-lg">Products Used:</h4>
+    
+    <div class="carousel-wrapper relative">
+    <!-- LEFT ARROW -->
+    <button class="scroll-btn left absolute left-2 top-1/2 -translate-y-1/2 z-10">◀</button>
+
+
+    <!-- Scrollable Product Row -->
+    <div class="carousel-container flex overflow-x-auto gap-4 scroll-smooth hide-scrollbar px-8" style="scroll-behavior: smooth;">
+
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah foam cleanser.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Cleanser</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow serum.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Serum</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow moisturizer.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Moisturizer</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah sunscreen.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Sunscreen</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Sally cushion.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Sally Cushion</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Wansue Lipmatte.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Wansue Lipmatte</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/maybeline mascara.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Maybelline Mascara</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Oh My Blush.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Blusher</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/browcara.webp" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Brow Gel</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/eyeliner.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Eyeliner</p>
+      </div>
+    </div>
+     <!-- RIGHT ARROW -->
+    <button class="scroll-btn right absolute right-2 top-1/2 -translate-y-1/2 z-10">▶</button>
+    </div>
+  </div>
+</div>
+
+
+   <!-- Glam Look -->
+   <div class="tab-content hidden" id="glam">
+   <div class="flex flex-col md:flex-row items-start gap-6 bg-[#7f0a0a] p-6 rounded-xl text-white">
+    
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <div class="bg-white p-2 rounded-lg shadow-lg inline-block mt-10">
+        <img src="img/makeup-style/glam.jpg" alt="Glam Look" class="w-64 h-auto rounded-md">
+      </div>
+    </div>
+
+     <!-- Step-by-step text -->
+        <div class="w-full md:w-1/2 text-left ml-[-400px] mt-8 text-left text-step-section">
+          <h3 class="text-4xl font-bold mb-4 font-[Playfair] text-[#ffe6eb]">Step-by-Step:</h3>
+          <ol class="list-decimal list-inside space-y-3 text-lg leading-relaxed">
+            <li>Start by prepping your skin using your regular skincare products to ensure it's clean, hydrated, and well-moisturized.</li>
+            <li>Apply a cushion foundation evenly across the face. Pay extra attention to areas prone to creasing by gently dabbing in thin layers to avoid cakiness.</li>
+            <li>Enhance the eyes with a bold eyeshadow look, incorporating shimmer or glitter to add that glamorous touch.</li>
+            <li>Apply blush to the cheeks to bring warmth and color back to the face, balancing the overall makeup look.</li>
+            <li>Highlight the high points of the face—cheekbones, brow bone, and inner corners of the eyes—to achieve a radiant, glowing finish.</li>
+            <li>Define the eyes further with eyeliner and a coat (or two) of volumizing mascara to lift and intensify the lashes.</li>
+            <li>Finish with a statement lip by layering a matte lipstick with a glossy top coat for a plump, eye-catching pout.</li>
+          </ol>
+        </div>
+      </div>
+
+  <!-- Product Carousel -->
+  <div class="mt-6 bg-[#ffe6eb] p-6 rounded-xl shadow-inner relative">
+
+    <h4 class="text-[#7f0a0a] font-bold mb-4 text-lg">Products Used:</h4>
+
+    <div class="carousel-wrapper relative">
+    <!-- LEFT ARROW -->
+    <button class="scroll-btn left absolute left-2 top-1/2 -translate-y-1/2 z-10">◀</button>
+
+
+    <!-- Scrollable Product Row -->
+    <div class="carousel-container flex overflow-x-auto gap-4 scroll-smooth hide-scrollbar px-8" style="scroll-behavior: smooth;">
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah foam cleanser.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Cleanser</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow serum.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Serum</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow moisturizer.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Moisturizer</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah sunscreen.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Sunscreen</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah cushion2.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Wardah Cushion</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/lipbies lipmatte.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Lipbies Lipmatte</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/rohina mascara.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Rohina Mascara</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/silky girl pallete.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Silkygirl Eyeshadow</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/eyeliner.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Eyeliner</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/browcara.webp" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Brow Gel</p>
+      </div>
+    </div>
+    
+     <!-- RIGHT ARROW -->
+    <button class="scroll-btn right absolute right-2 top-1/2 -translate-y-1/2 z-10">▶</button>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Pinky Look -->
+   <div class="tab-content hidden" id="pinky">
+   <div class="flex flex-col md:flex-row items-start gap-6 bg-[#7f0a0a] p-6 rounded-xl text-white">
+    
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <div class="bg-white p-2 rounded-lg shadow-lg inline-block mt-10">
+        <img src="img/makeup-style/pinky.jpg" alt="Pinky Look" class="w-64 h-auto rounded-md">
+      </div>
+    </div>
+
+     <!-- Step-by-step text -->
+        <div class="w-full md:w-1/2 text-left ml-[-400px] mt-8 text-left text-step-section">
+          <h3 class="text-4xl font-bold mb-4 font-[Playfair] text-[#ffe6eb]">Step-by-Step:</h3>
+          <ol class="list-decimal list-inside space-y-3 text-lg leading-relaxed">
+           <li>Begin with your skincare routine to hydrate and prep the skin for smooth makeup application.</li>
+           <li>Apply a cushion foundation evenly for a light and natural base that enhances the skin tone.</li>
+           <li>Set the under-eye area, smile lines, and sides of the nose using a loose powder to prevent creasing and oil buildup.</li>
+           <li>Apply pink-toned eyeshadow on the eyelids and softly blend it onto the lower lash line for a cohesive look.</li>
+           <li>Add a touch of glitter to the center of the eyelids and under the eyes to create a cute and playful shimmer.</li>
+           <li>Draw a soft puppy-style eyeliner to elongate the eyes naturally, and finish with a coat of mascara to define the lashes.</li>
+           <li>Create an ombré lip by blending a soft pink lip color with a darker pink at the center for added dimension.</li>
+           <li>Apply a layer of lip gloss for a glossy, youthful finish—optional but highly recommended for a cute effect!</li>
+           <li>Highlight the inner corners of the eyes to brighten the gaze, and lightly set the overall makeup with loose powder for long-lasting wear.</li>
+          </ol>
+        </div>
+      </div>
+
+  <!-- Product Carousel -->
+  <div class="mt-6 bg-[#ffe6eb] p-6 rounded-xl shadow-inner relative">
+
+    <h4 class="text-[#7f0a0a] font-bold mb-4 text-lg">Products Used:</h4>
+
+   <div class="carousel-wrapper relative">
+    <!-- LEFT ARROW -->
+    <button class="scroll-btn left absolute left-2 top-1/2 -translate-y-1/2 z-10">◀</button>
+
+    <!-- Scrollable Product Row -->
+    <div class="carousel-container flex overflow-x-auto gap-4 scroll-smooth hide-scrollbar px-8" style="scroll-behavior: smooth;">
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah foam cleanser.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Cleanser</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow serum.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Serum</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow moisturizer.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Moisturizer</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah sunscreen.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Sunscreen</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Sally cushion.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Sally Cushion</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Lip Glasting Wardah.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Lip Glasting Wardah</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/rohina mascara.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Rohina Mascara</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Colorful Pallete.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Colorful Eyeshadow</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/silky girl pallete.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Silkygirl Eyeshadow</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Lipcream Wardah.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Lipcream Wardah</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/eyeliner.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Eyeliner</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/browcara.webp" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Brow Gel</p>
+      </div>
+    </div>
+
+    <!-- RIGHT ARROW -->
+    <button class="scroll-btn right absolute right-2 top-1/2 -translate-y-1/2 z-10">▶</button>
+    </div>
+
+  </div>
+</div>
+
+     <!-- Clown Look -->
+   <div class="tab-content hidden" id="clown">
+   <div class="flex flex-col md:flex-row items-start gap-6 bg-[#7f0a0a] p-6 rounded-xl text-white">
+    
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <div class="bg-white p-2 rounded-lg shadow-lg inline-block mt-10">
+        <img src="img/makeup-style/clown.jpg" alt="Clown Look" class="w-64 h-auto rounded-md">
+      </div>
+    </div>
+
+     <!-- Step-by-step text -->
+        <div class="w-full md:w-1/2 text-left ml-[-400px] mt-8 text-left text-step-section">
+          <h3 class="text-4xl font-bold mb-4 font-[Playfair] text-[#ffe6eb]">Step-by-Step:</h3>
+          <ol class="list-decimal list-inside space-y-3 text-lg leading-relaxed">
+           <li>Prep your skin thoroughly with skincare to ensure a smooth and comfortable base for heavier face products.</li>
+           <li>Apply white face paint evenly across the entire face to create a blank, theatrical canvas.</li>
+           <li>Use a purple eyeshadow to fill in the eyebrows for a bold and expressive clown-inspired brow look.</li>
+           <li>Blend yellow, blue, and purple eyeshadows on the eyelids and under the eyes to achieve a colorful, vibrant effect.</li>
+           <li>Apply a generous amount of pink blush to the cheeks for a dramatic and playful pop of color.</li>
+           <li>Use red matte lipstick to color the tip of the nose and also fill in the lips for that signature clown pout.</li>
+           <li>Extend the shape of the lips outward to create a longer, exaggerated smile typical of classic clown makeup.</li>
+           <li>Finish by setting everything lightly, if needed, and checking for symmetry and boldness in all key areas.</li>
+          </ol>
+        </div>
+      </div>
+
+  <!-- Product Carousel -->
+  <div class="mt-6 bg-[#ffe6eb] p-6 rounded-xl shadow-inner relative">
+
+    <h4 class="text-[#7f0a0a] font-bold mb-4 text-lg">Products Used:</h4>
+
+    <div class="carousel-wrapper relative">
+    <!-- LEFT ARROW -->
+    <button class="scroll-btn left absolute left-2 top-1/2 -translate-y-1/2 z-10">◀</button>
+
+    <!-- Scrollable Product Row -->
+   <div class="carousel-container flex overflow-x-auto gap-4 scroll-smooth hide-scrollbar px-8">
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah foam cleanser.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Cleanser</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow serum.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Serum</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow moisturizer.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Moisturizer</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah sunscreen.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Sunscreen</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/white face paint.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">White Face Paint</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/lipbies lipmatte.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Lipbies Lipmatte</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Colorful Pallete.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Colorful Eyeshadow</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/eyeliner.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Eyeliner</p>
+      </div>
+    </div>
+
+    <!-- RIGHT ARROW -->
+    <button class="scroll-btn right absolute right-2 top-1/2 -translate-y-1/2 z-10">▶</button>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Red Look -->
+    <div class="tab-content hidden" id="red">
+   <div class="flex flex-col md:flex-row items-start gap-6 bg-[#7f0a0a] p-6 rounded-xl text-white">
+    
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <div class="bg-white p-2 rounded-lg shadow-lg inline-block mt-10">
+        <img src="img/makeup-style/red.jpg" alt="Red Look" class="w-64 h-auto rounded-md">
+      </div>
+    </div>
+
+     <!-- Step-by-step text -->
+        <div class="w-full md:w-1/2 text-left ml-[-400px] mt-8 text-left text-step-section">
+          <h3 class="text-4xl font-bold mb-4 font-[Playfair] text-[#ffe6eb]">Step-by-Step:</h3>
+          <ol class="list-decimal list-inside space-y-3 text-lg leading-relaxed">
+           <li>Start by prepping the skin with your regular skincare routine to ensure a smooth and well-hydrated base.</li>
+           <li>Fill in your eyebrows using red eyeshadow to match and enhance the overall red-toned makeup theme.</li>
+           <li>Apply a rich red eyeshadow across the eyelids and blend it into the outer corners and under the eyes. Use the same red shade as a soft eyeliner for a cohesive look.</li>
+           <li>Add gold or red glitter to the center of the lids and inner corners to give the eyes a sparkling, dramatic effect.</li>
+           <li>Apply bold black eyeliner to define the eyes, followed by a generous coat of mascara to lift and intensify the lashes.</li>
+           <li>Apply blush just under the eyes for a youthful and bold aesthetic that complements the red tones.</li>
+           <li>Finish with a striking red lipstick and add a layer of gloss for a shiny, full-lip finish.</li>
+           <li>Set the entire makeup look with loose powder to ensure long-lasting wear and a smooth, matte finish.</li>
+          </ol>
+        </div>
+      </div>
+
+  <!-- Product Carousel -->
+  <div class="mt-6 bg-[#ffe6eb] p-6 rounded-xl shadow-inner relative">
+
+    <h4 class="text-[#7f0a0a] font-bold mb-4 text-lg">Products Used:</h4>
+
+    <div class="carousel-wrapper relative">
+    <!-- LEFT ARROW -->
+    <button class="scroll-btn left absolute left-2 top-1/2 -translate-y-1/2 z-10">◀</button>
+
+    <!-- Scrollable Product Row -->
+    <div class="carousel-container flex overflow-x-auto gap-4 scroll-smooth hide-scrollbar px-8">
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah foam cleanser.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Cleanser</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow serum.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Serum</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/glad2glow moisturizer.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Moisturizer</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah sunscreen.avif" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Sunscreen</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/wardah cushion2.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Wardah Cushion</p>
+      </div>
+       <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/lipbies lipmatte.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Lipbies Lipmatte</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/rohina mascara.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Rohina Mascara</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Colorful Pallete.jpg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Colorful Eyeshadow</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/eyeliner.png" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Eyeliner</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/browcara.webp" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Brow Gel</p>
+      </div>
+      <div class="bg-white p-2 rounded-md shadow text-center flex-shrink-0 w-40 snap-start">
+        <img src="img/makeup-product/Lip Glasting Wardah.jpeg" class="h-24 mx-auto rounded-md mb-2" />
+        <p class="text-sm font-medium text-[#7f0a0a]">Lip Glasting</p>
+      </div>
+    </div>
+
+    <!-- RIGHT ARROW -->
+    <button class="scroll-btn right absolute right-2 top-1/2 -translate-y-1/2 z-10">▶</button>
+    </div>
+
+  </div>
+</div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/nrqrratu__/" target="_blank">
+          <img src="img/ig2.png" alt="Instagram" />
+        </a>
+        <a href="https://www.tiktok.com/@nrqrratu_" target="_blank">
+          <img src="img/tiktok2.png" alt="TikTok" />
+        </a>
+        <a href="https://wa.me/60195236816" target="_blank">
+          <img src="img/wasap.png" alt="WhatsApp" />
+        </a>
+      </div>
+
+      <div class="footer-center-name">Qurratu Ain</div>
+      <a href="mailto:qurratuadnan@gmail.com" class="footer-email">qurratuadnan@gmail.com</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Qurratu Ain. Built with heart & hustle 💖</p>
+    </div>
+  </footer>
+
+  <script src="makeup-style.js"></script>
+</body>
+</html>

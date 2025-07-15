@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product - Qurratu Ain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="makeup.css" />
+  <style>
+    
+  .sub-nav {
+  display: flex;
+  justify-content: flex-start; /* 👉 align kiri */
+  gap: 1rem;
+  margin: 30px 0;
+  padding-left: 60px; /* 👉 jarakkan sikit dari tepi */
+}
+
+@media (max-width: 768px) {
+  .sub-nav {
+    justify-content: center; /* center untuk phone */
+    padding-left: 0;
+  }
+}
+
+
+.sub-link {
+  padding: 0.4rem 1.2rem;
+  background-color: transparent;
+  color: #7f0a0a;
+  border: 2px solid #7f0a0a;
+  border-radius: 9999px;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sub-link:hover {
+  background-color: #7f0a0a;
+  color: #fff;
+}
+
+.sub-link.active {
+  background-color: #7f0a0a;
+  color: white;
+}
+
+
+
+    .product-title {
+      font-size: 90px;
+      font-weight: 100;
+      font-family: 'Great Vibes', cursive;
+      color: #7f0a0a;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      text-shadow: 2px 4px 6px rgba(127, 10, 10, 0.3);
+    }
+
+    .product-section {
+      padding: 2rem 3rem;
+      color: #541111;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .product-section h3 {
+      font-size: 40px;
+      color: #7f0a0a;
+      font-family: 'Great Vibes', cursive;
+      margin-bottom: 1rem;
+    }
+
+    .product-section p {
+      max-width: 800px;
+      text-align: justify;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-top">
+      <div class="logo-text">Qurratu Ain</div>
+    </div>
+    <nav class="nav-bar">
+      <a href="makeup.html#home">HOME</a>
+      <a href="makeup.html#about">ABOUT ME</a>
+      <a href="product.html">PRODUCT</a>
+      <a href="makeup-style.html">MAKEUP STYLE</a>
+    </nav>
+  </header>
+
+  <!-- Title -->
+  <h2 class="product-title animate-on-scroll">My Product</h2>
+
+  <!-- Mini Nav -->
+  <div class="mini-nav sub-nav">
+  <a href="#" class="sub-link active" data-tab="skincare">Skincare</a>
+  <a href="#" class="sub-link" data-tab="makeup">Makeup</a>
+</div>
+
+  <!-- Skincare Section -->
+  <section id="skincare" class="tab-content active px-6">
+  <h2 class="text-3xl font-bold text-[#7f0a0a] text-center mb-8 font-[Playfair]">My Skincare</h2>
+
+  <div class="carousel-wrapper relative">
+    <!-- LEFT ARROW -->
+    <button class="scroll-btn left absolute left-2 top-1/2 -translate-y-1/2 z-10">◀</button>
+
+    <!-- TRACK -->
+    <div class="product-track">
+      <div class="product-card cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+         data-name="Wardah Foam"
+         data-desc="Cleanser yang sesuai untuk semua jenis kulit. Melembapkan dan mencerahkan.">
+  <img src="img/makeup-product/wardah foam cleanser.avif" alt="Wardah Foam Cleanser" class="product-img" />
+  <div class="product-overlay">
+    <p class="product-name">Whip Foam Cleanser Wardah</p>
+  </div>
+</div>
+
+      <div class="product-card cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+         data-name="Wardah Serum"
+         data-desc="Serum ringan dengan bahan aktif yang membantu mencerahkan dan merawat kulit kusam.">
+        <img src="img/makeup-product/wardah serum.avif" alt="Wardah Serum Ampoule" class="product-img" />
+        <div class="product-overlay">
+          <p class="product-name">Serum Ampoule Wardah</p>
+        </div>
+      </div>
+      <div class="product-card cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+         data-name="Glad2Glow Serum"
+         data-desc="Serum dengan Vitamin C dan Niacinamide untuk glowing effect dan kurangkan dark spots.">
+        <img src="img/makeup-product/glad2glow serum.jpeg" alt="Glad2Glow Serum" class="product-img" />
+        <div class="product-overlay">
+          <p class="product-name">Glad2Glow Serum</p>
+        </div>
+      </div>
+      <div class="product-card cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+         data-name="Glad2Glow Moisturizer"
+         data-desc="Pelembap yang ringan dan cepat meresap. Sesuai untuk kulit kombinasi dan kering.">
+        <img src="img/makeup-product/glad2glow moisturizer.png" alt="Glad2Glow Moisturizer" class="product-img" />
+        <div class="product-overlay">
+          <p class="product-name">Glad2Glow Moisturizer</p>
+        </div>
+      </div>
+      <div class="product-card cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Wardah Sunscreen"
+     data-desc="Perlindungan SPF harian untuk lindungi kulit dari sinaran UV dan pencemaran.">
+        <img src="img/makeup-product/wardah sunscreen.avif" alt="Wardah Sunscreen" class="product-img" />
+        <div class="product-overlay">
+          <p class="product-name">Wardah Sunscreen</p>
+        </div>
+      </div>
+      <div class="product-card cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Glad2Glow Clay Mask"
+     data-desc="Masker tanah liat yang bantu tarik keluar kotoran dan kawal minyak pada wajah.">
+        <img src="img/makeup-product/glad2glow clay mask.jpeg" alt="Glad2Glow Clay Mask" class="product-img" />
+        <div class="product-overlay">
+          <p class="product-name">Glad2Glow Clay Mask</p>
+        </div>
+      </div>
+      <div class="product-card cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="The Originote Micellar Water"
+     data-desc="Pembersih makeup lembut tanpa bilas. Sesuai untuk semua jenis kulit, termasuk sensitif.">
+        <img src="img/makeup-product/originote.avif" alt="The Originote Micellar Water" class="product-img" />
+        <div class="product-overlay">
+          <p class="product-name">The Originote Micellar Water</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT ARROW -->
+    <button class="scroll-btn right absolute right-2 top-1/2 -translate-y-1/2 z-10">▶</button>
+  </div>
+
+  </section>
+
+  <!-- Makeup Section -->
+  <section id="makeup" class="tab-content px-6">
+  
+  <!-- FACE -->
+  <h2 class="makeup-section-title">Face</h2>
+  <div class="makeup-grid">
+    <div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Sally Cushion Foundation"
+     data-desc="Cushion foundation dengan kemasan glowing. Senang diblend dan tahan lama untuk daily look.">
+  <img src="img/makeup-product/Sally cushion.jpg" alt="Foundation" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Sally Cushion Foundation</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Wardah Cushion Foundation"
+     data-desc="Cushion dengan SPF untuk lindungi kulit sambil bagi coverage ringan hingga sederhana.">
+  <img src="img/makeup-product/wardah cushion2.jpg" alt="Concealer" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Wardah Cushion Foundation</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="White Face Paint"
+     data-desc="Face paint putih untuk base makeup kreatif atau cosplay. Tekstur creamy dan mudah dicuci.">
+  <img src="img/makeup-product/white face paint.jpg" alt="Blush" class="product-img" />
+  <div class="product-overlay"><p class="product-name">White Face Paint</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Oh My Blush"
+     data-desc="Blusher dengan warna natural dan soft. Sesuai untuk look yang fresh dan sweet.">
+  <img src="img/makeup-product/Oh My Blush.jpg" alt="Highlighter" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Oh My Blush</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Silky Girl Pallete"
+     data-desc="Palet pelbagai warna untuk eyeshadow, contour & highlight. Best untuk beginners dan pro.">
+  <img src="img/makeup-product/silky girl pallete.jpg" alt="Eyeliner" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Silky Girl Pallete</p></div>
+</div>
+
+  </div>
+
+  <!-- EYE -->
+  <h2 class="makeup-section-title">Eye</h2>
+  <div class="makeup-grid">
+    <div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Colorful Eyeshadow"
+     data-desc="Palet eyeshadow dengan pelbagai warna vibrant. Sesuai untuk glam look atau experiment.">
+  <img src="img/makeup-product/Colorful Pallete.jpg" alt="Eyeshadow" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Colorful Eyeshadow</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Silky Girl Pallete"
+     data-desc="Palet versatile dengan warna soft & warm. Boleh guna untuk mata, contour & highlight.">
+  <img src="img/makeup-product/silky girl pallete.jpg" alt="Eyeliner" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Silky Girl Pallete</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Maybelline Mascara"
+     data-desc="Mascara yang bagi volume dan panjang. Tahan lama dan tak comot sepanjang hari.">
+  <img src="img/makeup-product/maybeline mascara.jpg" alt="Mascara" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Maybeline Mascara</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Rohina Mascara"
+     data-desc="Mascara dengan formula ringan, sesuai untuk daily use. Mudah dicuci dan tak melekit.">
+  <img src="img/makeup-product/rohina mascara.jpg" alt="Eye Primer" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Rohina Mascara</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Eyeliner"
+     data-desc="Eyeliner hitam pekat, mudah digunakan untuk hasil tajam & tahan lama. Sesuai untuk beginner.">
+  <img src="img/makeup-product/eyeliner.png" alt="Lashes" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Eyeliner</p></div>
+</div>
+
+  </div>
+
+  <!-- LIPS -->
+  <h2 class="makeup-section-title">Lips</h2>
+  <div class="makeup-grid">
+    <div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Lip Glasting Wardah"
+     data-desc="Lip tint dengan kemasan berkilat, tahan lama & tidak mengeringkan bibir. Perfect for glossy look!">
+  <img src="img/makeup-product/Lip Glasting Wardah.jpeg" alt="Lip Tint" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Lip Glasting Wardah</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Lipbies Panna Lab"
+     data-desc="Lipmatte dengan tekstur ringan & pigmen kuat. Sesuai untuk harian & bold makeup.">
+  <img src="img/makeup-product/lipbies lipmatte.jpeg" alt="Lip Gloss" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Lipbies Panna Lab</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Lip Cream Wardah"
+     data-desc="Lipcream creamy & smooth. Tak mengeringkan bibir & tahan seharian.">
+  <img src="img/makeup-product/Lipcream Wardah.avif" alt="Lip Balm" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Lip Cream Wardah</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Nivea Lipbalm"
+     data-desc="Lipbalm melembapkan bibir & rawat bibir kering. Ada sedikit tint warna semula jadi.">
+  <img src="img/makeup-product/nivea lipbam.jpeg" alt="Lipstick Matte" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Nivea Lipbalm</p></div>
+</div>
+
+<div class="product-card group cursor-pointer bg-white p-4 rounded-xl shadow-md w-48 text-center"
+     data-name="Wansue Lipmatte"
+     data-desc="Lipmatte local brand dengan hasil matte smooth. Banyak pilihan warna cantik!">
+  <img src="img/makeup-product/Wansue Lipmatte.jpeg" alt="Lip Scrub" class="product-img" />
+  <div class="product-overlay"><p class="product-name">Wansue Lipmatte</p></div>
+</div>
+
+  </div>
+</div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/nrqrratu__/" target="_blank">
+          <img src="img/ig2.png" alt="Instagram" />
+        </a>
+        <a href="https://www.tiktok.com/@nrqrratu_" target="_blank">
+          <img src="img/tiktok2.png" alt="TikTok" />
+        </a>
+        <a href="https://wa.me/60195236816" target="_blank">
+          <img src="img/wasap.png" alt="WhatsApp" />
+        </a>
+      </div>
+
+      <div class="footer-center-name">Qurratu Ain</div>
+      <a href="mailto:qurratuadnan@gmail.com" class="footer-email">qurratuadnan@gmail.com</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Qurratu Ain. Built with heart & hustle 💖</p>
+    </div>
+  </footer>
+
+ <!-- Modal Box -->
+  <div id="productModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center hidden z-50">
+    <div class="bg-pink-200 rounded-3xl p-6 w-[320px] text-center relative shadow-lg">
+      <button id="closeModal" class="absolute top-4 right-4 text-2xl font-bold text-red-700 hover:scale-110">&times;</button>
+      <h2 class="text-xl font-bold mb-3 text-black">Description</h2>
+      <p id="modalDesc" class="text-black text-base font-semibold"></p>
+    </div>
+  </div>
+
+  <script src="makeup.js"></script>
+  <script>
+  const tabLinks = document.querySelectorAll(".sub-link");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabLinks.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Remove .active from all links
+      tabLinks.forEach(l => l.classList.remove("active"));
+      // Add .active to clicked tab
+      this.classList.add("active");
+
+      // Hide all tab content
+      tabContents.forEach(tab => tab.classList.remove("active"));
+      // Show selected tab
+      const target = this.getAttribute("data-tab");
+      document.getElementById(target).classList.add("active");
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.carousel-wrapper').forEach(carousel => {
+      const track = carousel.querySelector('.product-track');
+      const btnLeft = carousel.querySelector('.scroll-btn.left');
+      const btnRight = carousel.querySelector('.scroll-btn.right');
+
+      btnLeft.addEventListener('click', () => {
+        track.scrollBy({ left: -300, behavior: 'smooth' });
+      });
+
+      btnRight.addEventListener('click', () => {
+        track.scrollBy({ left: 300, behavior: 'smooth' });
+      });
+    });
+  });
+//POP UP DESCRIPTION
+    document.addEventListener("DOMContentLoaded", function () {
+      // buka modal bila klik kad
+      document.querySelectorAll('.product-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const name = card.getAttribute('data-name');
+          const desc = card.getAttribute('data-desc');
+
+          const modal = document.getElementById('productModal');
+          const modalDesc = document.getElementById('modalDesc');
+
+          modalDesc.innerHTML = `<strong>${name}</strong><br>${desc}`;
+          modal.classList.remove('hidden');
+        });
+      });
+
+      // tutup modal
+      document.getElementById('closeModal').addEventListener('click', () => {
+        document.getElementById('productModal').classList.add('hidden');
+      });
+
+      // tutup modal bila klik luar box
+      document.getElementById('productModal').addEventListener('click', (e) => {
+        if (e.target.id === 'productModal') {
+          document.getElementById('productModal').classList.add('hidden');
+        }
+      });
+    });
+  </script>
+
+
+</body>
+</html>
